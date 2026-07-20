@@ -48,6 +48,7 @@ public class GTCAAddon implements IGTAddon {
 
         @Override
         public void registerRecipeCapabilities() {
+                net.mordgren.gtca.common.machine.multiblock.electric.miner.capability.GTCASpaceMiningCapabilities.init();
         }
 
         @Override
