@@ -12,6 +12,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import net.minecraft.resources.ResourceLocation;
 
 public final class SpaceMiningInfoRecipeCapability extends RecipeCapability<SpaceMiningInfo> {
 
@@ -19,7 +20,7 @@ public final class SpaceMiningInfoRecipeCapability extends RecipeCapability<Spac
 
     private SpaceMiningInfoRecipeCapability() {
         super(
-                "gtca:space_mining_info",
+                new ResourceLocation("gtca", "space_mining_info"),
                 0xFF66CCFF,
                 false,
                 100000,
