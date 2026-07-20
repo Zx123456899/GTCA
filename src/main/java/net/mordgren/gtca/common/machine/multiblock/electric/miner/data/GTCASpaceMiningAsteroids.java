@@ -9,7 +9,14 @@ public final class GTCASpaceMiningAsteroids {
 
     private GTCASpaceMiningAsteroids() {}
 
+    private static boolean initialized = false;
+
     public static void init() {
+        if (initialized) {
+            GTCA.LOGGER.info("[SpaceMining] GTCASpaceMiningAsteroids.init() already called, skipping");
+            return;
+        }
+        initialized = true;
         GTCA.LOGGER.info("[SpaceMining] GTCASpaceMiningAsteroids.init() called");
 
         AsteroidBuilder.asteroid(GTCA.id("asteroid/coal"))
