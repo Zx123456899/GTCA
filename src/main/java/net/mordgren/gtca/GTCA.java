@@ -61,7 +61,6 @@ public class GTCA {
         event.enqueueWork(() -> {
             GTCA.LOGGER.info("[SpaceMining] CommonSetup start");
 
-            GTCASpaceMiningAsteroids.init();      // астероиды
             GTCASpaceMiningCapabilities.init();   // capability для JEI/EMI
             GTCAItems.initTierMappings();         // твои маппинги
 
