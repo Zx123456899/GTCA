@@ -11,12 +11,7 @@ public final class GTCASpaceMiningCapabilities {
     public static void init() {
         if (INIT) return;
         INIT = true;
-        GTRegistries.RECIPE_CAPABILITIES.unfreeze();
-        try {
-            GTRegistries.RECIPE_CAPABILITIES.register("gtca:space_mining_info", SPACE_MINING_INFO);
-            GTCA.LOGGER.info("[SpaceMining] Registered recipe capability: gtca:space_mining_info");
-        } finally {
-            GTRegistries.RECIPE_CAPABILITIES.freeze();
-        }
+        GTRegistries.RECIPE_CAPABILITIES.register("gtca:space_mining_info", SPACE_MINING_INFO);
+        GTCA.LOGGER.info("[SpaceMining] Registered recipe capability: gtca:space_mining_info");
     }
 }
